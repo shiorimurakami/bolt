@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.body {
+  color: #333;
+}
+
+.button_box {
+  background-color: #74cfae;
+  font-size: 12px;
+}
+
+.button {
+  text-decoration: none;
+  transition: .3s;
+}
+
+.white_font {
+  color: #fff;
+}
+
+.button_box:hover .header_button,
+.button_box:hover .article_button {
+  color: #333
+}
+
+/* .button_box:hover .article_button {
+  color: #333
+} */
+
+/* ---------ここからheader----------- */
+
+.header {
+  background-color: #fff;
+  position: fixed;
+  padding: 15px 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+}
+
+.header_button_box {
+  margin-left: auto;
+}
+
+.header_icon {
+  font-size: 50px;
+}
+
+.header_button {
+  color: #fff;
+  display: inline-block;
+  padding: 14px 12px;
+}
+
+/* ---------ここからtheme----------- */
+
+.theme {
+  background-color: #f2f2f2;
+  padding: 250px 0;
+  width: 100%;
+}
+
+.theme_inner {
+  text-align: center;
+}
+
+.theme_title {
+  color: #74cfae;
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.theme_paragraph {
+  color: #c0c0c0;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+/* ----------ここからintroduction----------- */
+
+.introduction {
+  background-color: #74cfae;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.introduction_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction_right_box {
+  text-align: center;
+  margin-left: 100px;
+  width: 800px;
+}
+
+.introduction_title {
+  font-size: 24px;
+}
+
+.introduction_paragraph {
+  font-size: 20px;
+  padding-top: 35px;
+}
+
+/* ----------ここからarticle----------- */
+
+.article {
+  background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  width: 100%;
+}
+
+.article_title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.article_img {
+  margin-left: 100px;
+  margin-top: 80px;
+  opacity: .7;
+}
+
+.article_img:hover {
+  opacity: .3;
+}
+
+.img_box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.article_img:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.article_img:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+.article_button {
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+.img_under_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.article_paragraph {
+  width: 540px;
+  text-align: center;
+  margin:0 90px;
+}
+
+/* ----------ここからour skills----------- */
+
+.skills {
+  background-color: #4e4e4e;
+  padding: 70px 0 100px;
+  width: 100%;
+}
+
+.skills_title {
+  text-align: center;
+}
+
+.figure_box {
+  display: flex;
+  justify-content: center;
+}
+
+.figcaption {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.figure {
+  margin-left: 180px;
+}
+
+.figure:first-child {
+  margin-left: 0;
+}
+
+
+
+/* ----------ここからsns----------- */
+
+.sns {
+  background-color: #f2f2f2;
+}
+
+.sns_inner {
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+}
+
+.sns_icon_box {
+  transition: .3s;
+  text-align: center;
+  width: 185px;
+}
+
+.sns_icon {
+  color: #74cfae;
+  font-size: 50px;
+  padding: 30px 0;
+}
+
+.sns_icon_box:hover {
+  background-color: #fff;
+}
+
+/* ----------ここからfooter----------- */
+
+.footer {
+  background-color: #74cfae;
+  padding: 20px 0 25px
+}
+
+.footer_inner {
+  text-align: right;
+}
