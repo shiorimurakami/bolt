@@ -7,6 +7,10 @@
 
 .body {
   color: #333;
+  font-family: "Lato";
+}
+.main {
+  padding-top: 80px;
 }
 
 .button_box {
@@ -107,11 +111,12 @@
 
 .introduction_title {
   font-size: 24px;
+  font-family: "Raleway";
 }
 
 .introduction_paragraph {
   font-size: 20px;
-  padding-top: 35px;
+  margin-top: 35px;
 }
 
 /* ----------ここからarticle----------- */
@@ -124,16 +129,19 @@
 }
 
 .article_title {
+  font-family: "Raleway";
   font-size: 24px;
   text-align: center;
 }
 
-.article_img {
+.rink {
   margin-left: 100px;
   margin-top: 80px;
   opacity: .7;
 }
-
+.rink {
+  text-decoration: none;
+}
 .article_img:hover {
   opacity: .3;
 }
@@ -144,11 +152,11 @@
   margin-top: 40px;
 }
 
-.article_img:nth-child(3n+1) {
+.rink:nth-child(3n+1) {
   margin-left: 0;
 }
 
-.article_img:nth-child(-n+3) {
+.rink:nth-child(-n+3) {
   margin-top: 0;
 }
 
@@ -165,7 +173,7 @@
 }
 
 .article_paragraph {
-  width: 540px;
+  width: 465px;
   text-align: center;
   margin:0 90px;
 }
@@ -179,12 +187,15 @@
 }
 
 .skills_title {
+  font-family: "Raleway";
+  font-size: 20px;
   text-align: center;
 }
 
 .figure_box {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .figcaption {
@@ -207,18 +218,20 @@
 
 .sns {
   background-color: #f2f2f2;
+  padding: 200px 0;
+  width: 100%;
 }
 
 .sns_inner {
   display: flex;
   justify-content: center;
-  padding: 200px 0;
 }
 
 .sns_icon_box {
   transition: .3s;
   text-align: center;
   width: 185px;
+  text-decoration: none;
 }
 
 .sns_icon {
