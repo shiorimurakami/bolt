@@ -5,6 +5,10 @@
   font-family: "Lato";
 }
 
+img {
+  vertical-align: bottom;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -22,7 +26,7 @@
 .button {
   text-decoration: none;
   transition: .3s;
-
+}
 
 .white_font {
   color: #fff;
@@ -159,7 +163,7 @@
   text-decoration: none;
 }
 
-.show:hover .news_img {
+.news_img:hover {
   opacity: 1;
 }
 
@@ -247,6 +251,11 @@
   background-color: #fff;
 }
 
+.sns_icon_box_inner {
+  display: inline-block;
+  width: 100%;
+}
+
 /* ----------ここからfooter----------- */
 
 .footer {
@@ -256,4 +265,150 @@
 
 .footer_inner {
   text-align: right;
+}
+
+/* ここから1199px以下で適応 */
+@media screen and (max-width: 1199px) {
+  .inner {
+    width: 97%;
+  }
+
+  .introduction {
+    padding-bottom: 25px;
+  }
+
+  .introduction_inner {
+    display: block;
+    text-align: center;
+  }
+
+  .introduction_right_box {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .introduction_title {
+    margin-top: 20px;
+  }
+
+  .img_box {
+    display: block;
+    text-align: center;
+  }
+
+  .img_under_box {
+    display: block;
+  }
+
+  .show {
+    margin: 0;
+  }
+
+  .show:nth-child(3n) {
+    margin-bottom: 80px;
+  }
+
+  .img_under_box {
+    margin-top: 80px;
+  }
+
+  .news_paragraph {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .img_under_box {
+    text-align: center;
+  }
+
+  .news_button_box {
+    display: inline-block;
+    margin: 40px auto 0;
+  }
+
+  .item_box {
+    display: block;
+  }
+
+  .item {
+    margin-left: 0;
+    margin-top: 88px;
+    text-align: center;
+  }
+
+  .item:first-child {
+    margin-top: 0;
+  }
+
+  .sns_icon_box {
+    width: 25%;
+  }
+}
+
+/* タブレットのみ */
+@media (max-width: 1199px) and (min-width: 768px) {
+}
+
+/* スマホのみ適応 */
+@media screen and (max-width: 767px) {
+  /* ここからthemeの変更 */
+  .header_button_box {
+    visibility:hidden;
+  }
+
+  .menu_icon {
+    position: relative;
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 33px;
+    height: 20px;
+  }
+
+  .menu_icon_text {
+    width: 33px;
+    height: 3px;
+    background-color: #ddd;
+    position: absolute;
+    left: 10px;
+    display: inline-block;
+  }
+
+  .menu_icon_text:first-child {
+    top: 10px;
+  }
+
+  .menu_icon_text:nth-child(2) {
+    top: 18.5px;
+  }
+
+  .menu_icon_text:last-child {
+    bottom: 10px;
+  }
+
+  .theme {
+    padding: 160px 0 130px;
+  }
+
+  .theme_title {
+    font-size: 80px;
+  }
+
+  .news_paragraph {
+    width: 97%;
+  }
+
+  .sns {
+    padding: 50px 0;
+  }
+
+  .sns_inner {
+    display: block;
+  }
+
+    .sns_icon_box {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
