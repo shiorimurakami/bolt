@@ -5,6 +5,10 @@
   font-family: "Lato";
 }
 
+.white_font {
+  color: #fff;
+}
+
 img {
   vertical-align: bottom;
 }
@@ -12,6 +16,18 @@ img {
 .inner {
   width: 1100px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.arrangement {
+  display: flex;
+}
+
+.inline_center {
+  text-align: center;
 }
 
 .principal {
@@ -24,12 +40,7 @@ img {
 }
 
 .button {
-  text-decoration: none;
   transition: .3s;
-}
-
-.white_font {
-  color: #fff;
 }
 
 .button_box:hover .header_button,
@@ -40,10 +51,6 @@ img {
 .is-raleway {
   font-family: "Raleway";
 }
-
-/* .button_box:hover .article_button {
-  color: #333
-} */
 
 /* ---------ここからheader----------- */
 
@@ -56,7 +63,6 @@ img {
 }
 
 .header_inner {
-  display: flex;
   align-items: center;
 }
 
@@ -65,7 +71,6 @@ img {
 }
 
 .header_button {
-  color: #fff;
   display: inline-block;
   padding: 14px 12px;
 }
@@ -80,10 +85,6 @@ img {
   background-color: #f2f2f2;
   padding: 250px 0;
   width: 100%;
-}
-
-.theme_inner {
-  text-align: center;
 }
 
 .theme_title {
@@ -107,7 +108,6 @@ img {
 }
 
 .introduction_inner {
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -122,7 +122,6 @@ img {
 }
 
 .introduction_right_box {
-  text-align: center;
   margin-left: 100px;
   width: 800px;
 }
@@ -138,12 +137,10 @@ img {
 
 .news_title {
   font-size: 24px;
-  text-align: center;
 }
 
 .news_paragraph {
   width: 465px;
-  text-align: center;
   margin:0 90px;
 }
 
@@ -160,10 +157,12 @@ img {
 .show {
   margin-left: 100px;
   margin-top: 80px;
-  text-decoration: none;
 }
 
-.news_img:hover {
+.show_inner {
+  display: inline-block;
+}
+.show_inner:hover .news_img {
   opacity: 1;
 }
 
@@ -176,13 +175,11 @@ img {
 }
 
 .img_box {
-  display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .img_under_box {
-  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 90px;
@@ -198,18 +195,15 @@ img {
 
 .skills_title {
   font-size: 22px;
-  text-align: center;
 }
 
 .item_box {
-  display: flex;
-  justify-content: center;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .item_text {
   font-size: 16px;
-  text-align: center;
   margin-top: 15px;
 }
 
@@ -230,21 +224,17 @@ img {
 }
 
 .sns_inner {
-  display: flex;
   justify-content: center;
 }
 
 .sns_icon_box {
   transition: .3s;
-  text-align: center;
   width: 185px;
-  text-decoration: none;
 }
 
 .sns_icon {
   color: #74cfae;
   font-size: 50px;
-  padding: 30px 0;
 }
 
 .sns_icon_box:hover {
@@ -253,6 +243,7 @@ img {
 
 .sns_icon_box_inner {
   display: inline-block;
+  padding: 30px 0;
   width: 100%;
 }
 
@@ -277,33 +268,37 @@ img {
     padding-bottom: 25px;
   }
 
+  .arrangement:not(:first-child) {
+    flex-direction: column;
+  }
+  
   .introduction_inner {
-    display: block;
+    /* flex-direction: column; */
     text-align: center;
   }
-
+  
   .introduction_right_box {
     margin: 0 auto;
     width: 80%;
   }
-
+  
   .introduction_title {
     margin-top: 20px;
   }
-
+  
   .img_box {
-    display: block;
+    /* flex-direction: column; */
     text-align: center;
   }
-
+  
   .img_under_box {
-    display: block;
+    /* flex-direction: column; */
   }
-
+  
   .show {
     margin: 0;
   }
-
+  
   .show:nth-child(3n) {
     margin-bottom: 80px;
   }
@@ -327,7 +322,7 @@ img {
   }
 
   .item_box {
-    display: block;
+    /* flex-direction: column; */
   }
 
   .item {
@@ -347,13 +342,16 @@ img {
 
 /* タブレットのみ */
 @media (max-width: 1199px) and (min-width: 768px) {
+  /* .arrangement:not(:last-child){
+    
+  } */
 }
 
 /* スマホのみ適応 */
 @media screen and (max-width: 767px) {
   /* ここからthemeの変更 */
   .header_button_box {
-    visibility:hidden;
+    display: none;
   }
 
   .menu_icon {
@@ -372,11 +370,8 @@ img {
     background-color: #ddd;
     position: absolute;
     left: 10px;
+    top:10px;
     display: inline-block;
-  }
-
-  .menu_icon_text:first-child {
-    top: 10px;
   }
 
   .menu_icon_text:nth-child(2) {
@@ -404,10 +399,10 @@ img {
   }
 
   .sns_inner {
-    display: block;
+    flex-direction: column;
   }
 
-    .sns_icon_box {
+  .sns_icon_box {
     margin: 0 auto;
     width: 100%;
   }
