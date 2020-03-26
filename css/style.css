@@ -6,6 +6,10 @@
   background-color: #f2f2f2;
 }
 
+.menu_icon {
+  display: none;
+}
+
 .white_font {
   color: #fff;
 }
@@ -26,6 +30,7 @@ a {
 
 .arrangement {
   display: flex;
+  justify-content: space-between;
 }
 
 .inline_center {
@@ -66,10 +71,6 @@ a {
 
 .header_inner {
   align-items: center;
-}
-
-.header_button_box {
-  margin-left: auto;
 }
 
 .header_button {
@@ -189,7 +190,7 @@ a {
 }
 
 .skills_title {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .item_box {
@@ -301,7 +302,7 @@ a {
 
   .news_paragraph {
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
   }
 
   .img_under_box {
@@ -339,8 +340,8 @@ a {
   }
 
   .menu_icon {
+    display: block;
     position: relative;
-    margin-left: auto;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -355,7 +356,6 @@ a {
     position: absolute;
     left: 10px;
     top:10px;
-    display: inline-block;
   }
 
   .menu_icon_text:nth-child(2) {
@@ -374,10 +374,6 @@ a {
     font-size: 80px;
   }
 
-  .news_paragraph {
-    width: 97%;
-  }
-
   .sns {
     padding: 50px 0;
   }
@@ -387,7 +383,6 @@ a {
   }
 
   .sns_icon_box {
-    margin: 0 auto;
     width: 100%;
   }
 }
